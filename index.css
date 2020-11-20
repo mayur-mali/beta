@@ -1,0 +1,703 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body{
+
+    background-color: #0a100d!important;
+}
+
+.book-store{
+    background-color: #0a100d!important;
+    box-shadow: 0px 2px 50px 10px rgba(0, 0, 0, 0.21);
+    width: 100%;
+    height: auto!important;
+    margin: 0 auto;
+    padding: 0!important;
+    
+}
+
+/* >>>>>>header start<<<<<<<<<<<< */
+
+
+.new-carousel .carousel-cell {
+    width: 100%;
+    height: 450px;
+    margin-right: 10px;
+    
+    border-radius: 5px;
+    
+  }
+  
+.new-carousel .flickity-button{
+
+    display: none;
+}
+
+ /* .new-carousel .flickity-prev-next-button.previous {
+    left: -110px!important;
+}
+
+.new-carousel .flickity-prev-next-button.next {
+    right: -110px!important;
+} */
+
+.new-carousel .flickity-page-dots {
+
+    display: inline;
+    bottom: 55px;
+    right: 55px;
+    width: 20%;
+}
+
+.new-carousel .flickity-page-dots .dot{
+
+    width: 15px;
+    height: 15px;
+    
+}
+
+.new-carousel .flickity-page-dots .dot.is-selected{
+
+    background-color: #fb5607;
+}
+
+.header{
+
+    width: 100%;
+    height: 70px;
+    /* background-color: floralwhite; */
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    /* box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12); */
+}
+
+
+
+.search{
+   display: flex;
+    align-items: center;
+}
+
+.search i{
+
+    color: white;
+    margin-right: 5px;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.search input{
+
+    border: none;
+    background-color: transparent;
+    padding: 3px;
+    caret-color: rgb(0, 200, 0);
+
+}
+
+::placeholder{
+
+    font-size: 12px;
+    color: rgb(194, 194, 194);
+    display: flex;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+
+
+.search input:focus{
+
+    outline: none;
+}
+
+.name{
+    width: 650px;
+    height: 50px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.name h6{
+    margin: 0px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+.name span{
+
+    margin-left: 1px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #80ffdb;
+
+}
+
+.profile{
+    width: 400px;
+    height: 50px;
+    
+}
+
+/* >>>>>>header end<<<<<<<<<<<< */
+
+/* >>>>>>>>>carousel div<<<<<<<<<<<<<<< */
+.new-carousel{
+    width: 100%;
+    height: 450px;
+}
+
+
+.cl1{
+
+    background-color: #edb9de;
+    border-color: #edb9de!important;
+
+}
+
+.cl2{
+
+    background-color: #a4e0eb;
+    border-color: #a4e0eb!important; 
+
+}
+.cl3{
+
+    background-color: #edb9d6;
+    border-color: #edb9d6!important; 
+
+}
+.cl4{
+
+    background-color:#fdca95;
+    border-color: #fdca95!important; 
+
+}
+
+.cl5{
+
+    background-color: #cbb5e2; 
+
+}
+
+.cl6{
+
+    background-color:#caffbf;
+
+}
+
+
+
+
+.book-img{
+
+    width: 180px;
+    height: 200px;
+    
+    
+}
+
+.book-photo{
+
+    width: 180px;
+    flex-shrink: 0!important;
+    
+    bottom: -35px;
+    left: 35px;
+    z-index: 2;
+    border-radius: 2px;
+    box-shadow: -2px 6px 19px 0px #7f818e;
+    transition: .3s ease;
+    transform: translateY(-3px);
+   
+    
+}
+.book-photo:hover{
+    transform: scale(0.80);
+    cursor: pointer;
+    margin-top: -35px!important;
+}
+
+.book-img {
+    flex-shrink: 0!important;
+
+   }
+.book-content{
+
+    padding-left: 50px;
+    width: 50%;
+    
+}
+
+.book-title {
+    color: #ffffff;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.book-author {
+    margin-top: 3px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.rate{
+
+    display: flex;
+    color: #ffffff;
+    
+}
+.book-Rating{
+    margin-left: 10px;
+    color: #ffffff;
+}
+.book-sum {
+    margin-top: 20px;
+    font-size: 14px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.book-see{
+
+    width: 160px;
+    padding: 6px 30px;
+    margin-top: 10px;
+    border-radius: 60px;
+    background-color: #ffffff;
+    color: #edb9de;
+    cursor: pointer;
+}
+
+.book-see a{
+
+    text-decoration: none;
+    color: #edb9de;
+
+}
+.book-see a:hover{
+
+    text-decoration: none;
+    color: #ff6e72;
+
+}
+
+/* >>>>>>>>>carousel div end<<<<<<<<<<<<<<< */
+
+/* >>>>>>>>>>>bookscard start<<<<<<<<<<<< */
+
+.bookscard{
+
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    margin-top: 40px;
+}
+
+
+
+.booktabs{
+    width: 100%;
+    height: auto!important;
+    
+    
+}
+
+.head-title h4{
+    color: #ffffff;
+}
+
+
+.tabs-header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    height: 50px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid gray;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+
+
+.nav-link{
+
+    color: #ffffff;
+    font-size: 12px;
+    text-transform: lowercase;
+    
+}
+
+
+.tabs-li .nav-link.active {
+
+    background-color: transparent!important;
+    color: #fb5607!important;
+    border: none!important;
+    
+}
+
+.nav-link:hover{
+
+    border: none!important;
+    color: #fb5607;
+}
+
+.nav-tabs{
+
+    border: none!important;
+}
+
+:focus {
+    outline: none!important;
+}
+
+.nav-tabs .nav-item {
+    margin-bottom: 0px;}
+
+
+
+.nav-tabs:hover{
+    
+    border: none!important;
+}
+
+.nav-tabs:focus{
+
+    border: none!important;
+}
+/* >>>>>>>>>>>bookscard end<<<<<<<<<<<< */
+
+
+
+/* >>>>>>>>>main .carousel<<<<<<<<<<<< */
+
+
+  
+
+  
+  /* position dots up a bit */
+  .flickity-page-dots {
+   display: none;
+  }
+  /* dots are lines */
+  .flickity-page-dots .dot {
+    height: 4px;
+    width: 40px;
+    margin: 0;
+    border-radius: 0;
+  }
+
+ 
+
+
+
+  .info{
+
+    padding: 0 20px;
+    color: #ffffff;
+    overflow: hidden;
+  }
+
+  .booki{
+
+    width: 140px;
+    flex-shrink: 2;
+    bottom: -45px;
+    left: 35px;
+    border-radius: 2px;
+    box-shadow: -2px 6px 19px 0px #7f818e;
+    transition: .3s ease;
+
+  }
+
+  .booki:hover{
+    transform: scale(1.03);
+  }
+  
+/* >>>>>>>>>main .carousel end<<<<<<<<<<<< */
+
+
+/* >>>>>>>>>>div 1 start<<<<<<<<<<< */
+
+
+.div1{
+
+    /* display: flex; */
+    justify-content: center;
+    width: 100%!important;
+    margin-bottom: 50px;
+    height: auto;
+}
+
+.div1 span{
+
+    color: white;
+    font-family: 'Goldman', cursive;
+}
+
+
+.div1 .caro-2 {
+    
+    width: 100%;
+    margin-top: 50px;
+   
+    
+  }
+  
+  .div1 .carousel-cell {
+      width: 252px!important;
+      height: 378px!important;
+    padding-right: 20px;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    
+  }
+  
+
+
+  
+  /* big buttons, no circle */
+  .flickity-prev-next-button {
+    width: 100px;
+    height: 100px;
+    background: transparent;
+  }
+  /* arrow color */
+  .flickity-prev-next-button .arrow {
+    fill: black;
+  }
+  .flickity-prev-next-button.no-svg {
+    color: white;
+  }
+  .flickity-prev-next-button:hover {
+    background: transparent;
+  }
+  /* hide disabled button */
+  .flickity-prev-next-button:disabled {
+    display: none;
+  }
+
+  @media (max-width: 978px){
+    .div1 .carousel-cell {
+        width: 200px!important;
+        height:290px!important;
+     
+      
+    }
+
+    .new-carousel .flickity-page-dots {
+
+        display: inline;
+        bottom: 55px;
+        right: 55px;
+        width: 30%;
+    }
+
+    .new-carousel .flickity-page-dots .dot{
+
+     width: 12px;
+     height: 12px;
+    }
+  }
+
+  @media (max-width: 768px){
+
+    .container, .container-sm {
+        max-width: 100%!important;
+    }
+    .bookscard {
+
+        margin-top: 50px;
+    }
+   
+  }
+
+  @media (max-width: 650px){
+
+    .div1 .carousel-cell {
+        width: 180px!important;
+        height:250px!important;
+    }
+
+    .tabs-header{
+
+        padding-right: 0px!important ;
+        display: block;
+        height: 77px;
+        border-bottom: 3px solid ;
+        border-color: red;
+    }
+    .tabs-li {
+
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    .tabs-li .nav{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .head-title{
+
+        padding-left: 17px;
+    }
+
+    .header{
+        padding-left: 20px;
+        padding-right: 0px;
+    }
+
+    .name{
+        width: 385px;
+    }
+
+    .new-carousel .flickity-page-dots .dot{
+
+        width: 10px;
+        height: 10px;
+       }
+
+  }
+
+  @media (max-width: 558px){
+
+    .div1 .carousel-cell {
+        width: 150px!important;
+        height:200px!important;
+    }
+
+    
+
+  }
+  
+  @media (max-width: 500px) {
+
+    .div1{
+        margin: 0px 5px!important;
+        width: 100%!important;
+    }
+
+
+    .browes{
+        width: 150px;
+    }
+
+
+    .div1 .carousel{
+  
+              width: 100%!important;
+              
+              height: 160px;
+              padding-left:0px 20px;
+          }
+          .div1 .carousel-cell{
+  
+              width: 93px!important;
+              height: 148px!important;
+              margin-right: 20px!important;
+              padding: 0px!important;
+              
+          }
+
+  
+          .div1{
+  
+              padding: 0px 0px!important;
+          }
+          .div1 .flickity-button{
+              display: none;
+          }
+  
+          .div1 .flickity-page-dots{
+              display: none;
+          }
+          .new-carousel .flickity-page-dots .dot{
+
+            width: 8px;
+            height: 8px;
+           }
+
+        .new-carousel .carousel-cell,.new-carousel{
+            height: 300px;
+        }
+        .new-carousel .flickity-page-dots{
+
+            bottom: 45px;
+        }
+  
+    } 
+  .cover{
+
+    width: 100%;
+    height: 80%;
+    
+  }
+
+  .hrline{
+      border: 2px solid;
+      width: 100%;
+      
+  }
+
+  .div1 span{
+      font-size: 30px;
+  }
+
+  .cover img{
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+  }
+
+  .name-book{
+      width: 100%;
+      height: 20%;
+      background-color: black;
+      display: flex;
+      
+      align-items: center;
+      
+      padding:10px;
+  }
+
+  .name-book a{
+      text-decoration: none;
+      color: #ffffff;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }
+
+  .name-book a:hover{
+      color: #ffffff;
+      text-decoration: none;
+      
+  }
+
